@@ -23,28 +23,28 @@
     * Para este case, foi-se desenvolvido um módulo de transformações com o framework pyspark, seguindo as orientações do [README](https://github.com/clicksign/python-dev-test/blob/master/README.md) enviado pela organização. Sendo assim, a implementação da normalização de dados se adere totalmente à [DESCRIÇÃO](https://github.com/clicksign/python-dev-test/blob/master/data/Description) de como os dados deverão ser tratados (data cleasing, relacionemtos, padronização de nome de colunas e etc.).
 
 
-* **ETL de dados com apache Apache Spark  e Proposta de implementação do modelo Data Warehouse.**
-    * A estrutura necessária para a execução do pipeline de ETL foi implementada seguindo o pradão semelhante a Arquitetura Orientada a Serviçõs (SOA) evidenciado abaixo. Este padrão contribui para fácil manutenção do código fonte e principalmente para escalabilidade de análises sob o dado coletado.
-    ![DATA](/resources/project_model.png)
+## **ETL de dados com apache Apache Spark  e Proposta de implementação do modelo Data Warehouse.**
+A estrutura necessária para a execução do pipeline de ETL foi implementada seguindo o pradão semelhante a Arquitetura Orientada a Serviçõs (SOA) evidenciado abaixo. Este padrão contribui para fácil manutenção do código fonte e principalmente para escalabilidade de análises sob o dado coletado.
+![DATA](/resources/project_model.png)
 
-### Sources
-        Contém as fontes de dados disponibilizadas para o desenvolvimento do case.
+## **Sources**
+Contém as fontes de dados disponibilizadas para o desenvolvimento do case.
 
-### RAW:
-    Módulo que faz o processo de extração e salva o dado bruto (sem transformação, regras e etc) na tabela *raw_atult*
+## **RAW**:
+Módulo que faz o processo de extração e salva o dado bruto (sem transformação, regras e etc) na tabela *raw_atult*
 
-### Integration
-    Módulo que faz o processo de transformação e salva o dado já transformado na tablea *intatult*. A partir desta etapa, os dados já podem ser consumidos no banco postgres.
+## Integration   
+Módulo que faz o processo de transformação e salva o dado já transformado na tablea *inst_adult*. A partir desta etapa, os dados já podem ser consumidos no banco postgres.
 
-### Business
-    Módulo de desenvolvimento que implementa o modelo Data Warehouse e disponibiliza a tabela *bs_fact_adult* para análise.
+## Business
+Módulo de desenvolvimento que implementa o modelo Data Warehouse e disponibiliza a tabela *bs_fact_adult* para análise.
 
-### DAO
-    Modulo que viabiliza a escrita / leitura das tabelas no postgress.
+## DAO
+Modulo que viabiliza a escrita / leitura das tabelas no postgress.
 
 
-### Proposta de implementação do modelo Data Warehouse
-    O modelo relacional foi implementado sob o banco relacional Postgres Versão 4.0, para Linux conforme o ilustrado abaixo.
+## Proposta de implementação do modelo Data Warehouse
+O modelo relacional foi implementado sob o banco relacional Postgres Versão 4.0, para Linux conforme o ilustrado abaixo.
 ![MER](/resources/data_modeling.png)
 
 1. Tabelas Dimensionais:
