@@ -12,6 +12,10 @@
 * Resumo
     * O conteúdo deste pipeline de **ETL** tem como objetivo demonstrar o fluxo de execução de execução de dados, implementando regras de negócio utlizando como base **Apache Spark**. Além da aplicação de transformações para viabilizar a implementação das transformações (*que também podem conter regras de negócios*), os dados foram desnormalizados seguindo os conceitos do modelo **Star Schema (KIMBALL)**.
     * Tecnologias que viabilizaram a realização do case:
+        * [Apache Airflow](https://airflow.apache.org/)
+        * [Postgres](https://www.postgresql.org/)
+        * [Apache Pyspark](https://spark.apache.org/docs/latest/api/python/)
+    
 
 
 
