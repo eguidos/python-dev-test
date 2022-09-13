@@ -20,7 +20,7 @@
 
 
 * **Solução**
-    * Para este case, foi-se desenvolvido um módulo de transformações com o framework pyspark, seguindo as orientações do [README](./python_dev_test/README.md/) enviado pela organização. Sendo assim, a implementação da normalização de dados se adere totalmente à [DESCRIÇÃO](https://github.com/eguidos/python-dev-test/blob/guilherme_santos/src/src/data/Description) de como os dados deverão ser tratados (data cleasing, relacionemtos, padronização de nome de colunas e etc.).
+    * Para este case, foi-se desenvolvido um módulo de transformações com o framework pyspark, seguindo as orientações do [README](./python_dev_test/README.md/) enviado pela organização. Sendo assim, a implementação da normalização de dados se adere totalmente à [DESCRIÇÃO](https://github.com/clicksign/python-dev-test/blob/master/README.md) de como os dados deverão ser tratados (data cleasing, relacionemtos, padronização de nome de colunas e etc.).
 
 
 * **ETL de dados com apache Apache Spark  e Proposta de implementação do modelo Data Warehouse.**
